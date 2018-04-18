@@ -1,0 +1,10 @@
+Package: alluvium
+Title: Alluvium Plot
+Version: 0.0.0.9000
+Authors@R: person(“Andy”, “Kim”, email = “andikym@gmail.com", role = c("aut", "cre"))
+Description: Plots an alluvium/Sankey diagram, using a molten dataframe as input.
+Depends: R (>= 3.4.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
