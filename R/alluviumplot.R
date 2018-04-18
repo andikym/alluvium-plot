@@ -1,6 +1,12 @@
 #' Alluvial Plot Function
 #'
 #' This function allows you to plot an alluvial/Sankey diagram
+#' @docType data
+#'
+#' @usage data(melt_df)
+#' 
+#' @format An object of class \code{"dataframe"}
+#' 
 #' @param df A dataframe containing each variable as a column; must be in molted form (see reshape package for details)
 #' @param x_axis the column in df containing the x axis information
 #' @param grouping the column in df containing the group identity information
@@ -15,6 +21,8 @@
 #' @keywords alluvium plot Sankey
 #' @export
 #' @examples
+#' yearaxes <- seq(1990, 2010, 5)
+#' yearbreaks <- c(1991.3,1993.7,1996.3,1998.7,2001.3,2003.7,2006.3,2008.7)
 #' plot_alluvium(df = melt_df, x_axis = melt_df$year, grouping = melt_df$factors, 
 #' weights = melt_df$value, plot_title = "Risk Factors for Stroke in Blacks", 
 #' xlab = "Year", ylab = "Cumulative Proportion", axis_breaks = yearaxes)
